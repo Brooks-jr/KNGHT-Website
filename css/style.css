@@ -1,24 +1,23 @@
 /* ==========================
 -         VARIABLES
 ========================== */
+
 :root {
     /* COLORS */
     --primary-color: #9A73FF;
     --secondary-color: #212226;
     --tertiary-color: #f4f4f4;
-
     /* FONTS */
     --open-sans: 'Open Sans', sans-serif;
     --raleway: 'Raleway', sans-serif;
     --pixel: 'Press Start 2P', cursive;
 }
 
-
 /* ==========================
 -         GENERAL
 ========================== */
-html,
-body {
+
+html, body {
     height: 100%;
 }
 
@@ -26,12 +25,7 @@ body {
     color: var(--secondary-color);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     font-family: var(--raleway);
     text-transform: uppercase;
 }
@@ -43,13 +37,7 @@ p {
     line-height: 24px;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
+h1, h2, h3, h4, h5, h6, p {
     cursor: default;
     /* margin: 0; */
 }
@@ -59,10 +47,10 @@ section {
     overflow: hidden;
 }
 
-
 /* ==========================
 -         PRE-LOADER
 ========================== */
+
 #preloader {
     position: fixed;
     top: 0;
@@ -86,10 +74,10 @@ section {
     margin: auto;
 }
 
-
 /* ==========================
 -          HOME
 ========================== */
+
 #home {
     background: none;
     height: 100%;
@@ -140,8 +128,7 @@ section {
     /* font-weight: 300; */
 }
 
-#home__content-header h1,
-#home__text p {
+#home__content-header h1, #home__text p {
     color: #fff;
 }
 
@@ -153,10 +140,10 @@ section {
     text-transform: uppercase;
 }
 
-
 /* ==========================
 -          ABOUT
 ========================== */
+
 #about__top-right p:first-child {
     margin-bottom: 30px;
 }
@@ -190,13 +177,11 @@ section {
     /* opacity: 0; */
     height: 0;
     transition: all 400ms ease-in-out;
-    
 }
 
 .about__box-item:hover .overlay-icon {
     opacity: 0;
     transition: all 200ms ease-in-out;
-    
 }
 
 .about__box-item h3 {
@@ -244,10 +229,10 @@ section {
     text-align: center;
 }
 
-
 /* ==========================
 -           TEAM
 ========================== */
+
 #team__header .sub-header {
     min-height: 160px;
 }
@@ -261,14 +246,13 @@ section {
     width: 100%;
     height: 100%;
     padding: 80px 0;
-    
 }
 
 .team__member-info h6 {
     text-transform: none;
     color: var(--primary-color);
     font-size: 16px;
-    margin: 0; 
+    margin: 0;
 }
 
 .team__member-info p {
@@ -334,11 +318,10 @@ section {
     border-right: 6px solid transparent;
 }
 
-
-
 /* ==========================
 -          HEADERS
 ========================== */
+
 .sub-header h5 {
     display: inline-block;
     color: var(--primary-color);
@@ -358,10 +341,10 @@ section {
     font-weight: 100;
 }
 
-
 /* ==========================
 -       SOCIAL ICONS
 ========================== */
+
 .social-icon-list {
     padding: 0;
     margin-top: 20px;
@@ -388,12 +371,12 @@ section {
     border-color: transparent;
 }
 
-.social-icon-list .twitter a:hover{
+.social-icon-list .twitter a:hover {
     background-color: #55acee;
     border-color: transparent;
 }
 
-.social-icon-list .google-plus a:hover{
+.social-icon-list .google-plus a:hover {
     background-color: #dd4b39;
     border-color: transparent;
 }
@@ -401,6 +384,7 @@ section {
 /* ==========================
 -        CONTENT BOX
 ========================== */
+
 .content-wrap-lg {
     padding: 120px 0;
 }
@@ -409,11 +393,13 @@ section {
     padding: 100px 0;
 }
 
-
 /* ==========================
 -          BUTTONS
 ========================== */
-button:focus {outline:0 !important; }
+
+button:focus {
+    outline: 0 !important;
+}
 
 .button-general {
     font-family: var(--raleway);
@@ -431,18 +417,17 @@ button:focus {outline:0 !important; }
     border: 1px solid var(--primary-color);
 }
 
-.button-home:hover,
-.button-home:focus {
+.button-home:hover, .button-home:focus {
     color: #fff;
     background-color: var(--primary-color);
     border: 1px solid var(--primary-color);
     transform: scale(1.2);
 }
 
-
 /* ==========================
 -      SCROLL INDICATOR
 ========================== */
+
 .mouse {
     margin: 30px auto 0 auto;
     margin-left: -16px;
@@ -521,15 +506,14 @@ button:focus {outline:0 !important; }
 /* ==========================
 -        OWL CAROUSEL
 ========================== */
+
 .owl-theme .owl-nav {
     font-size: 40px;
     color: var(--secondary-color);
     background: none;
 }
 
-.owl-theme .owl-nav .owl-next:hover,
-.owl-theme .owl-nav .owl-prev:hover {
+.owl-theme .owl-nav .owl-next:hover, .owl-theme .owl-nav .owl-prev:hover {
     background: none !important;
     color: var(--primary-color) !important;
 }
-

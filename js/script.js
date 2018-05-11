@@ -19,16 +19,28 @@ $(function () {
         smartSpeed: 700,
         dots: false,
         nav: true,
-        navText: ['<i class="fas fa-angle-left"></i>','<i class="fas fa-angle-right"></i>']
+        navText: ['<i class="fas fa-angle-left"></i>', '<i class="fas fa-angle-right"></i>']
     });
 });
+
 // ratings
-$(function() {
-    $('.progress-bar').each(function() {
-        $(this).animate({
-            width: $(this).attr('aria-valuenow') + '%'
-        }, 1000);
-    });
-    
+$(function () {
+    $('#team__bottom').waypoint(function () {
+        // test
+        // alert('test! viewport at bottom of team section');
+
+        // progress bar animation
+        $('.progress-bar').each(function () {
+            $(this).animate({
+                width: $(this).attr('aria-valuenow') + '%'
+            }, 1000);
+        });
+
+        // prevents triggering again
+        this.destroy();
+    }, {
+            // triggers when element is at bottom of viewport
+            offset: 'bottom-in-view'
+        });
 });
 

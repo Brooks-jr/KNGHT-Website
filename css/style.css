@@ -318,6 +318,37 @@ section {
     border-right: 6px solid transparent;
 }
 
+
+/* ==========================
+-         STATEMENT
+========================== */
+#statement {
+    color: #fff;
+    background: linear-gradient(
+        to right bottom, 
+        rgba(0,0,0, .8), 
+        rgba(0,0,0, .8)),
+        url(../img/bg-statement.jpg) no-repeat fixed center;
+    background-size: cover;
+}
+
+#statement h3 {
+    text-transform: none;
+    font-weight: 200;
+    font-size: 28px;
+    line-height: 45px;
+}
+
+#statement p {
+    font-size: 14px;
+    font-family: var(--raleway);
+    margin-top: 8px;
+}
+
+#statement p span {
+    color: var(--primary-color);
+}
+
 /* ==========================
 -          HEADERS
 ========================== */

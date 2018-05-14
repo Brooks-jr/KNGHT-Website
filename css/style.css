@@ -47,6 +47,14 @@ section {
     overflow: hidden;
 }
 
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+}
+
+::-webkit-scrollbar {
+    background: var(--secondary-color);
+}
+
 /* ==========================
 -         PRE-LOADER
 ========================== */
@@ -349,9 +357,76 @@ section {
     color: var(--primary-color);
 }
 
+
+/* ==========================
+-         SERVICES
+========================== */
+
+/* TOP */
+.services__top-img {
+    margin: 60px 0;
+}
+
+.services__item {
+    margin: 35px 0;
+}
+
+.services__item-icon {
+    margin: 0;
+    font-size: 42px;
+    transition: all 200ms linear;
+}
+
+.services__item:hover .services__item-icon {
+    color: var(--primary-color);
+    transform: translateX(-20px);
+}
+
+.services__item-text h5 {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    margin: 0 0 6px 0;
+}
+
+.services__item:hover .services__item-text h5 {
+    color: var(--secondary-color);
+}
+
+.services__item-text h4 {
+    margin: 0 0 8px 0;
+    font-size: 24px;
+}
+
+.services__item-text p {
+    line-height: normal;
+}
+
+/* BOTTOM */
+.services__slide-img {
+    width: 542px;
+    height: 442px;
+}
+
 /* ==========================
 -          HEADERS
 ========================== */
+
+.main-header {
+    margin-bottom: 80px;
+}
+
+.main-header h5 {
+    font-size: 16px;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.main-header h2 {
+    margin: 0;
+}
 
 .sub-header h5 {
     display: inline-block;
@@ -367,10 +442,16 @@ section {
 }
 
 .sub-header h2 {
-    margin-left: 35px;
+    margin: 0 0 0 35px;
+}
+
+.main-header h2,
+.sub-header h2 {
     font-size: 42px;
     font-weight: 100;
+    line-height: 45px;
 }
+
 
 /* ==========================
 -       SOCIAL ICONS
@@ -443,12 +524,12 @@ button:focus {
     letter-spacing: 2px;
 }
 
-.button-home {
+.button-outline {
     color: var(--primary-color);
     border: 1px solid var(--primary-color);
 }
 
-.button-home:hover, .button-home:focus {
+.button-outline:hover, .button-outline:focus {
     color: #fff;
     background-color: var(--primary-color);
     border: 1px solid var(--primary-color);

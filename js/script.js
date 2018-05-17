@@ -45,3 +45,14 @@ $(function () {
 });
 
 
+// =======================
+// -      SERVICES
+// =======================
+// responsive-tabs
+$(function() {
+    $('#services__slides').responsiveTabs({
+        animation: 'slide'
+    });
+});
+
+

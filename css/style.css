@@ -5,6 +5,7 @@
 :root {
     /* COLORS */
     --primary-color: #9A73FF;
+    --primary-color-dark: #7540ff;
     --secondary-color: #212226;
     --tertiary-color: #f4f4f4;
     /* FONTS */
@@ -402,11 +403,80 @@ section {
     line-height: normal;
 }
 
+
 /* BOTTOM */
-.services__slide-img {
-    width: 542px;
-    height: 442px;
+#services__bottom {
+    background: var(--secondary-color);
 }
+
+.services__slide .col-md-6 {
+    padding: 0;
+}
+
+#services__slides ul{
+    margin-bottom: 40px;
+}
+
+#services__slides ul li {
+    padding: 5px 30px;
+}
+
+#services__slides ul li a {
+    font-family: var(--raleway);
+    font-size: 23px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 200;
+    padding: 0;
+}
+
+#services__slides ul li a:hover,
+#services__slides ul li a:focus,
+#services__slides ul li a:active,
+#services__slides ul li.r-tabs-state-active a{
+    color: var(--primary-color);
+}
+
+#services__slides ul li.r-tabs-state-active a{
+    font-weight: 400;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 5px;
+    transition: border-color 300ms linear;
+}
+
+.services__slide-img {
+    /* width: 542px;
+    height: 442px; */
+    width: 100%;
+    margin: 0 auto;
+}
+
+.services__slide-text {
+    background: #fff;
+    padding: 59px 30px;
+    min-height: 548.438px;
+}
+
+.services__slide-text h2 {
+    font-size: 48px;
+    font-weight: 100;
+    color: #bbb;
+    margin-bottom: 30px;
+}
+
+.services__slide-text h3 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    text-transform: none;
+}
+
+.services__slide-text p {
+    line-height: 24px;
+    margin-bottom: 40px;
+}
+
+
 
 /* ==========================
 -          HEADERS
@@ -529,12 +599,32 @@ button:focus {
     border: 1px solid var(--primary-color);
 }
 
-.button-outline:hover, .button-outline:focus {
+.button-outline:hover, 
+.button-outline:focus {
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.button-fill {
     color: #fff;
     background-color: var(--primary-color);
     border: 1px solid var(--primary-color);
+}
+
+.button-fill:hover, 
+.button-fill:focus {
+    background-color: var(--primary-color-dark);
+    border: 1px solid var(--primary-color-dark);
+}
+
+.button-outline:hover, 
+.button-outline:focus,
+.button-fill:hover, 
+.button-fill:focus {
+    color: #fff;
     transform: scale(1.2);
 }
+
 
 /* ==========================
 -      SCROLL INDICATOR

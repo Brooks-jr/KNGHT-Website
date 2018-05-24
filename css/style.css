@@ -455,7 +455,7 @@ section {
 .services__slide-text {
     background: #fff;
     padding: 59px 30px;
-    min-height: 548.438px;
+    min-height: 531.81px;
 }
 
 .services__slide-text h2 {
@@ -474,6 +474,10 @@ section {
 .services__slide-text p {
     line-height: 24px;
     margin-bottom: 40px;
+}
+
+.services__slide-button a{
+    margin: 0 auto;
 }
 
 

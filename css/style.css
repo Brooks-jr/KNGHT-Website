@@ -492,6 +492,53 @@ section {
     padding: 0;
 }
 
+.portfolio__item {
+    overflow: hidden;
+}
+
+#isotope__filter-nav {
+    margin-bottom: 10px;
+    padding: 20px 25px 20px 0;
+}
+
+#isotope__filter-nav button {
+    font-family: var(--raleway);
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: transparent;
+    box-shadow: none;
+    padding-right: 35px;
+}
+
+#isotope__filter-nav button:hover {
+    color: var(--primary-color);
+}
+
+#isotope__filter-nav button span {
+    display: block;
+    padding-bottom: 5px;
+}
+
+#isotope__filter-nav button.active span {
+    color: var(--primary-color);
+    border-bottom: 3px solid var(--primary-color);
+    transition: border-color .4s ease-in-out;
+}
+
+.portfolio__item img {
+    width: 100%;
+    height: auto;
+    transition: transform .5s ease;
+}
+
+.portfolio__item:hover img {
+    transform: scale(1.1);
+}
+
+
+
+
 
 /* ==========================
 -          HEADERS

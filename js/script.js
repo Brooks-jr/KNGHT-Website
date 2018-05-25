@@ -77,3 +77,12 @@ $(window).on('load', function () {
         $(this).addClass('active');
     });
 });
+
+// MAGINIFIC-POPUP
+$(function() {
+    $('#portfolio__wrap').magnificPopup({
+        delegate: 'a', // child items selector, by clicking on it popup will open
+        type: 'image',
+        gallery: {enabled: true}
+    });
+});

@@ -56,3 +56,24 @@ $(function() {
 });
 
 
+// =======================
+// -      PORTFOLIO
+// =======================
+$(window).on('load', function () {
+    // initialize
+    $('#isotope-container').isotope({});
+
+    // filter items on button click
+    $('#isotope__filter-nav').on('click', 'button', function() {
+
+        // get filter value
+        var filterValue = $(this).attr('data-filter');
+        $('#isotope-container').isotope({
+            filter: filterValue
+        });
+
+        // remove/add active class to buttons
+        $('#isotope__filter-nav').find('.active').removeClass('active');
+        $(this).addClass('active');
+    });
+});

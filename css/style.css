@@ -481,6 +481,17 @@ section {
 }
 
 
+/* ==========================
+-         PORTFOLIO
+========================== */
+#portfolio .sub-header {
+    margin-bottom: 50px;
+}
+
+.row.no-gutters [class*=col-] {
+    padding: 0;
+}
+
 
 /* ==========================
 -          HEADERS

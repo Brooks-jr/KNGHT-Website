@@ -504,6 +504,10 @@ section {
 /* ==========================
 -         PORTFOLIO
 ========================== */
+#portfolio {
+    padding-bottom: 160px;
+}
+
 #portfolio .sub-header {
     margin-bottom: 50px;
 }
@@ -633,7 +637,72 @@ section {
 }
 
 
+/* ==========================
+-        TESTIMONIAL
+========================== */
+#testimonial {
+    background: var(--secondary-color);
+    color: #fff;
+    padding-bottom: 45px;
+    overflow: visible;
+}
 
+.testimonial .row {
+    margin-bottom: 25px;
+}
+
+#testimonial .sub-header{
+    padding: 80px 0;
+    margin-bottom: 50px;
+}
+
+#testimonial__slides {
+    background-color: var(--primary-color);
+    background-image: url(../img/bg-testimonial.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    top: -120px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+    
+}
+
+.testimonial {
+    padding: 20px 45px 0 45px;
+}
+
+.testimonial h3 {
+    text-transform: none;
+    font-size: 32px;
+    line-height: 35px;
+}
+
+.testimonial .testimonial__stars {
+    font-size: 20px;
+    margin: 20px 0 10px 0;
+}
+
+.testimonial p {
+    line-height: normal;
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.testimonial__author-details {
+    /* width: 106px; */
+    margin-top: 25px;
+    text-align: left;
+}
+
+.testimonial__author-details p {
+    margin: 0;
+}
+
+.testimonial__author-details p:first-child {
+    font-size: 16px;
+    font-weight: 700;
+}
 
 /* ==========================
 -          HEADERS

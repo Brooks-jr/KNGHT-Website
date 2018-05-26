@@ -86,3 +86,19 @@ $(function() {
         gallery: {enabled: true}
     });
 });
+
+// =======================
+// -     TESTIMONIAL
+// =======================
+$(function () {
+    $('#testimonial__slides').owlCarousel({
+        items: 1,
+        autoplay: true,
+        autoplayHoverPause: true,
+        loop: true,
+        smartSpeed: 700,
+        dots: false,
+        nav: true,
+        navText: ['<i class="fas fa-angle-left"></i>', '<i class="fas fa-angle-right"></i>']
+    });
+});

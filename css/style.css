@@ -663,8 +663,8 @@ section {
     background-attachment: fixed;
     background-size: cover;
     top: -120px;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
-    
+    -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
 }
 
 .testimonial {
@@ -929,8 +929,26 @@ button:focus {
     color: var(--secondary-color);
     background: none;
 }
+.owl-theme .owl-nav .owl-next:hover {
+    -webkit-transform: translateX(7px);
+            transform: translateX(7px);
+}
 
-.owl-theme .owl-nav .owl-next:hover, .owl-theme .owl-nav .owl-prev:hover {
+.owl-theme .owl-nav .owl-prev:hover {
+    -webkit-transform: translateX(-7px);
+            transform: translateX(-7px);
+}
+
+
+.owl-theme .owl-nav .owl-next:hover, 
+.owl-theme .owl-nav .owl-prev:hover {
     background: none !important;
     color: var(--primary-color) !important;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+
+#testimonial__slides.owl-theme .owl-nav .owl-next:hover, 
+#testimonial__slides.owl-theme .owl-nav .owl-prev:hover {
+    color: #fff !important;
 }

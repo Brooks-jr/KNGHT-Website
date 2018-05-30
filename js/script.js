@@ -106,3 +106,25 @@ $(function () {
 // =======================
 // -       STATS
 // =======================
+$(function() {
+    $('.counter').counterUp({
+        delay: 10,
+        time: 2000
+    });
+});
+
+
+// =======================
+// -      CLIENTS
+// =======================
+$(function () {
+    $('#clients__list').owlCarousel({
+        items: 6,
+        autoplay: true,
+        autoplayHoverPause: false,
+        loop: true,
+        smartSpeed: 400,
+        dots: true,
+        nav: false
+    });
+});

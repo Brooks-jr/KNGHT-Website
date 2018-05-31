@@ -960,6 +960,43 @@ section {
 
 
 /* ==========================
+-           CONTACT
+========================== */
+/* LEFT */
+#contact__left p {
+    margin: 25px 0 20px 0;
+}
+
+ul.location__details {
+    list-style: none;
+    padding: 0;
+}
+
+ul.location__details li {
+    display: flex;
+    font-family: var(--open-sans);
+    margin-top: 12px;
+}
+
+ul.location__details li i {
+    font-size: 20px;
+    width: 45px;
+}
+
+#contact__left ul.social-icon-list li a {
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    text-align: center;
+}
+
+#contact__left ul.social-icon-list li a:hover {
+    color: #fff;
+    border-color: transparent;
+}
+
+
+
+/* ==========================
 -          HEADERS
 ========================== */
 
@@ -1111,8 +1148,8 @@ button:focus {
 .button-fill:hover, 
 .button-fill:focus {
     color: #fff;
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
 }
 
 

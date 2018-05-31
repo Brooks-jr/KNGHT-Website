@@ -979,6 +979,7 @@ ul.location__details li {
 }
 
 ul.location__details li i {
+    color: var(--primary-color);
     font-size: 20px;
     width: 45px;
 }
@@ -994,6 +995,58 @@ ul.location__details li i {
     border-color: transparent;
 }
 
+/* RIGHT */
+#contact__right {
+    color: #fff;
+    background: var(--secondary-color);
+    padding: 25px 30px;
+    border-radius: 6px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.6);
+}
+
+#contact__right h4 {
+    font-size: 24px;
+    font-weight: 100;
+    margin-bottom: 25px;
+}
+
+#contact__right form input.form-control,
+#contact__right form textarea.form-control {
+    color: #fff;
+    font-family: var(--open-sans);
+    padding: 10px 15px;
+    font-size: 12px;
+    line-height: 24px;
+    background: transparent;
+    border-radius: 0;
+    border: none;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+#contact__right form input.form-control:focus,
+#contact__right form textarea.form-control:focus {
+    box-shadow: 0 0 5px rgba(155, 115, 255, 1)
+}
+
+#contact__right form textarea.form-control {
+    min-height: 164px;
+}
+
+#contact__right form ::placeholder {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+
+/* ==========================
+-         GOOGLE MAP
+========================== */
+
+#map {
+    height: 600px;
+}
 
 
 /* ==========================

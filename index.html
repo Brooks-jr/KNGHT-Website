@@ -1647,8 +1647,8 @@
                             <!-- FORM -->
                             <form action="">
                                 <!-- heading -->
-                                <h4>Send Us A Message</h4>
-                                <p>Have questions or just want to say hi? Feel free to message us anytime!</p>
+                                <h4 class="text-center">Send Us A <strong>Message</strong></h4>
+                                <!-- <p>Have questions or just want to say hi? Feel free to message us anytime!</p> -->
 
                                 <!-- fields -->
                                 <div class="row">
@@ -1675,7 +1675,7 @@
 
                                 <!-- message -->
                                 <div class="form-group">
-                                    <textarea name="message" id="message" class="form-control" cols="30" rows="10" placeholder="Message..."></textarea>
+                                    <textarea name="message" id="message" class="form-control" placeholder="Message..."></textarea>
                                 </div>
 
                                 <!-- submit -->
@@ -1691,6 +1691,20 @@
         </div>
     </section>
 
+
+<!-- ==================================
+-             GOOGLE MAP
+=====================================-->
+
+    <section id="google-map">
+        <div class="container-fluid">
+            <div class="row">
+                <div id="map">
+
+                </div>
+            </div>
+        </div>
+    </section>
 
 <!-- ==================================
 -                SCRIPTS
@@ -1724,6 +1738,9 @@
 
     <!-- ISOTOPE -->
     <script src="js/isotope/isotope.pkgd.min.js"></script>
+
+    <!-- GOOGLE MAPS API -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAnNKk-ZuvxIb5xk4sPyNxUpAPKAhfP9b0&callback=initMap"></script>
 
     <!-- JAVASCRIPT -->
     <script src="js/script.js"></script>

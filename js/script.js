@@ -410,6 +410,7 @@ $(window).on('load', function () {
         title: "Click to view address"
     });
 
+
     // marker info popup
     var infowindow = new google.maps.InfoWindow({
         content: addressString
@@ -421,4 +422,25 @@ $(window).on('load', function () {
 
     infowindow.open(map, marker);
 
+});
+
+
+// =======================
+// -       NAVBAR
+// =======================
+
+$(function() {
+    $(window).scroll(function() {
+        // alert('window scrolled');
+        if($(window).scrollTop() > 50 ) {
+            // show navbar
+            // alert('scrolled more than 50 pixels. Scroll position = ' + $(window).scrollTop());
+            $('nav').addClass('header__nav-dark');
+
+        } else {
+            // hide navbar
+            // alert('scrolled less than 50 pixels. Scroll position = ' + $(window).scrollTop());
+            $('nav').removeClass('header__nav-dark');
+        }
+    });
 });

@@ -88,6 +88,60 @@ section {
 }
 
 /* ==========================
+-        HEADER NAV
+========================== */
+
+.navbar {
+    padding: 35px 0 20px 0;
+}
+
+.header__nav-wrap {
+    padding: 0 85px;
+}
+
+.navbar-brand {
+    padding: 10px 15px;
+}
+
+ul.navbar-nav > li > a {
+    font-family: var(--raleway);
+    font-size: 13px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 1px solid transparent;
+    
+}
+
+ul.navbar-nav li a.outlined {
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+ul.navbar-nav > li > a:hover,
+ul.navbar-nav > li > a:focus {
+    background: none;
+    color: var(--primary-color);
+    border-bottom: 1px solid var(--primary-color);
+}
+
+ul.navbar-nav li a.outlined:hover,
+ul.navbar-nav li a.outlined:focus {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+/* fixed nav */
+.header__nav-dark {
+    background: var(--secondary-color);
+    padding: 10px 0;
+    box-shadow: 0 10px 6px -9px rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+}
+
+
+/* ==========================
 -          HOME
 ========================== */
 
@@ -117,7 +171,9 @@ section {
     position: fixed;
     width: 100%;
     height: 100%;
-    z-index: -1;
+    z-index: -1 !important;
+    top: 0;
+    left: 0;
 }
 
 #home__content-wrap {
@@ -1223,6 +1279,7 @@ button:focus {
 .button-outline {
     color: var(--primary-color);
     border: 1px solid var(--primary-color);
+    border-radius: 0;
 }
 
 .button-outline:hover, 

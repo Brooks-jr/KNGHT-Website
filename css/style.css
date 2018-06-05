@@ -93,6 +93,7 @@ section {
 
 .navbar {
     padding: 35px 0 20px 0;
+    transition: all 300ms linear;
 }
 
 .header__nav-wrap {
@@ -111,12 +112,15 @@ ul.navbar-nav > li > a {
     text-transform: uppercase;
     letter-spacing: 1px;
     border: 1px solid transparent;
-    
+    transition: all 200ms linear;
 }
 
 ul.navbar-nav li a.outlined {
-    color: var(--primary-color);
-    border: 1px solid var(--primary-color);
+    font-size: 20px;
+    font-weight: 200;
+    color: #fff;
+    border: 1px solid #fff;
+    transition: all 200ms linear;
 }
 
 ul.navbar-nav > li > a:hover,
@@ -128,9 +132,19 @@ ul.navbar-nav > li > a:focus {
 
 ul.navbar-nav li a.outlined:hover,
 ul.navbar-nav li a.outlined:focus {
-    background: var(--primary-color);
-    color: #fff;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
 }
+
+ul.navbar-nav > li.active > a {
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+ul.navbar-nav li.active a.outlined {
+    border-color: var(--primary-color);
+}
+
 
 /* fixed nav */
 .header__nav-dark {
@@ -1096,6 +1110,10 @@ ul.location__details li i {
     text-transform: uppercase;
 }
 
+#contact__form-button a i {
+    font-size: 14px;
+}
+
 
 /* ==========================
 -         GOOGLE MAP
@@ -1279,7 +1297,6 @@ button:focus {
 .button-outline {
     color: var(--primary-color);
     border: 1px solid var(--primary-color);
-    border-radius: 0;
 }
 
 .button-outline:hover, 
@@ -1300,13 +1317,28 @@ button:focus {
     border: 1px solid var(--primary-color-dark);
 }
 
-.button-outline:hover, 
-.button-outline:focus,
+
 .button-fill:hover, 
 .button-fill:focus {
     color: #fff;
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
+}
+
+.button-outline:hover, 
+.button-outline:focus {
+    color: var(--primary-color);
+    background-color: #fff;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 3px 15px;
+    border-radius: 4px;
+    font-size: 22px;
+    display: none;
 }
 
 

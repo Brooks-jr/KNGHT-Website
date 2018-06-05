@@ -48,7 +48,7 @@
 
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="65">
 <!-- ==================================
 -              PRE-LOADER 
 =====================================-->
@@ -74,13 +74,14 @@
                     <div class="container">
                         <div class="collapse navbar-collapse">
                             <ul class="nav navbar-nav pull-right">
-                                <li><a href="#home">Home</a></li>
-                                <li><a href="#about">About</a></li>
-                                <li><a href="#team">Team</a></li>
-                                <li><a href="#services">Services</a></li>
-                                <li><a href="#portfolio">Portfolio</a></li>
-                                <li><a href="#blog">Blog</a></li>
-                                <li><a class="outlined" href="#contact">Contact</a></li>
+                                <li><a class="smooth-scroll" href="#home">Home</a></li>
+                                <li><a class="smooth-scroll" href="#about">About</a></li>
+                                <li><a class="smooth-scroll" href="#team">Team</a></li>
+                                <li><a class="smooth-scroll" href="#services">Services</a></li>
+                                <li><a class="smooth-scroll" href="#portfolio">Portfolio</a></li>
+                                <li><a class="smooth-scroll" href="#pricing">Pricing</a></li>
+                                <li><a class="smooth-scroll" href="#blog">Blog</a></li>
+                                <li><a class="outlined smooth-scroll" href="#contact">Contact</a></li>
                             </ul>
                         </div>
                     </div>
@@ -123,19 +124,20 @@
                 </div>
 
                 <div id="home__button">
-                    <a href="#about" title="Let's Begin" class="btn button-general button-outline" role="button">Dilly Dilly!</a>
+                    <a href="#about" title="Let's Begin" class="smooth-scroll btn button-general button-outline" role="button">Dilly Dilly!</a>
                 </div>
 
             </div>
         </div>
 
         <!-- scroll indicator -->
-        <div class="mouse">
-            <div class="mouse-icon">
-                <span class="mouse-wheel"></span>
+        <a href="#about" class="smooth-scroll">
+            <div class="mouse">
+                <div class="mouse-icon">
+                    <span class="mouse-wheel"></span>
+                </div>
             </div>
-        </div>
-
+        </a>
     </section>
 
 
@@ -1714,7 +1716,7 @@
 
                                 <!-- submit -->
                                 <div id="contact__form-button">
-                                    <a href="#" title="Send" class="btn button-general button-fill" role="button">Send</a>
+                                    <a href="#" title="Send" class="btn button-general button-fill" role="button">Send <i class="fab fa-telegram-plane"></i></a>
                                 </div>
                             </form>
                         </div>
@@ -1770,8 +1772,9 @@
                     <p class="with-love">Forged with <i class="fas fa-heart"></i> in Chicago</p>
                 </div>
             </div>
-            
         </div>
+
+        <a href="#home" class="btn btn-sm button-fill back-to-top smooth-scroll" title="back to top" role="button"><i class="fas fa-chevron-up"></i></a>
     </footer>
 
 

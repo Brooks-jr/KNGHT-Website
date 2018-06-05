@@ -49,7 +49,7 @@ $(function () {
 // -      SERVICES
 // =======================
 // responsive-tabs
-$(function() {
+$(function () {
     $('#services__slides').responsiveTabs({
         animation: 'slide'
     });
@@ -64,7 +64,7 @@ $(window).on('load', function () {
     $('#isotope-container').isotope({});
 
     // filter items on button click
-    $('#isotope__filter-nav').on('click', 'button', function() {
+    $('#isotope__filter-nav').on('click', 'button', function () {
 
         // get filter value
         var filterValue = $(this).attr('data-filter');
@@ -79,11 +79,11 @@ $(window).on('load', function () {
 });
 
 // MAGINIFIC-POPUP
-$(function() {
+$(function () {
     $('#portfolio__wrap').magnificPopup({
         delegate: 'a', // child items selector, by clicking on it popup will open
         type: 'image',
-        gallery: {enabled: true}
+        gallery: { enabled: true }
     });
 });
 
@@ -106,7 +106,7 @@ $(function () {
 // =======================
 // -       STATS
 // =======================
-$(function() {
+$(function () {
     $('.counter').counterUp({
         delay: 10,
         time: 2000
@@ -136,7 +136,7 @@ $(function () {
 $(window).on('load', function () {
     // variables
     var addressString = '1672 Blvd Dr, Burbank, CA 90210, USA';
-    var latLng = {lat: 34.180839, lng: -118.308966};
+    var latLng = { lat: 34.180839, lng: -118.308966 };
 
     var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 11,
@@ -416,7 +416,7 @@ $(window).on('load', function () {
         content: addressString
     });
 
-    marker.addListener('click', function() {
+    marker.addListener('click', function () {
         infowindow.open(map, marker);
     });
 
@@ -429,18 +429,48 @@ $(window).on('load', function () {
 // -       NAVBAR
 // =======================
 
-$(function() {
-    $(window).scroll(function() {
+$(function () {
+
+    toggleNav();
+
+    $(window).scroll(function () {
+        toggleNav();
+    });
+
+    function toggleNav() {
         // alert('window scrolled');
-        if($(window).scrollTop() > 50 ) {
+        if ($(window).scrollTop() > 50) {
             // show navbar
             // alert('scrolled more than 50 pixels. Scroll position = ' + $(window).scrollTop());
             $('nav').addClass('header__nav-dark');
+
+            // show back to top button
+            $('.back-to-top').fadeIn();
 
         } else {
             // hide navbar
             // alert('scrolled less than 50 pixels. Scroll position = ' + $(window).scrollTop());
             $('nav').removeClass('header__nav-dark');
+
+            // hide back to top button
+            $('.back-to-top').fadeOut();
+
         }
+    }
+});
+
+
+// =======================
+// -     SMOOTH-SCROLL
+// =======================
+$(function () {
+    $("a.smooth-scroll").click(function (event) {
+        event.preventDefault();
+
+        var section_id = $(this).attr("href");
+
+        $("html, body").animate({
+            scrollTop: $(section_id).offset().top
+        }, 1250, "easeInOutExpo");
     });
 });

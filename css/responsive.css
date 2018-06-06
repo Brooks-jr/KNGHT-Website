@@ -1,0 +1,43 @@
+/* ================================
+-         MEDIA QUERIES
+================================ */
+
+/* large devices */
+@media (min-width: 1200px) and (max-width: 1299.5px) {
+    /* nav */
+    .header__nav-wrap {
+        padding: 0;
+    }
+}
+
+/* medium devices */
+@media (min-width: 992px) and (max-width: 1199.5px){
+    /* nav */
+    .header__nav-wrap {
+        padding: 0;
+    }
+
+    .sub-header h2 {
+        font-size: 29px;
+    }
+
+    .services__slide .services__slide-text {
+        padding: 16px 30px;
+        min-height: 440.900px;
+    }
+
+    .services__slide-text p {
+        line-height: 20px;
+    }
+}
+
+/* small devices */
+@media (min-width: 768px) and (max-width: 991.5px){
+   
+}
+
+/* xsmall devices */
+@media (max-width: 767.5px) {
+    
+}
+

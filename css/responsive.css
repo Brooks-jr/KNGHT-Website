@@ -33,7 +33,92 @@
 
 /* small devices */
 @media (min-width: 768px) and (max-width: 991.5px){
-   
+
+    /* general */
+    .button-general {
+        padding: 8px 35px;
+        font-size: 10px;
+    }
+
+    .sub-header h2 {
+        font-size: 29px;
+    }
+
+    /* nav */
+    .header__nav-wrap {
+        padding: 0;
+    }
+
+    /* home */
+    #home__header {
+        font-size: 41px;
+    }
+
+    #home__text p {
+        font-size: 13px;
+    }
+     /* statment */
+    #statement__text h3 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    /* services top */
+    .services__item-icon {
+        font-size: 35px;
+    }
+
+    /* services bottom */
+    .r-tabs-accordion-title {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .r-tabs-accordion-title a {
+        font-family: var(--raleway);
+        font-size: 23px;
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 200;
+        padding: 0;
+    }
+
+    .r-tabs-accordion-title.r-tabs-state-active a {
+        color: var(--primary-color);
+        font-weight: 400;
+        border-bottom: 2px solid var(--primary-color);
+        padding-bottom: 5px;
+        -webkit-transition: border-color 300ms linear;
+        transition: border-color 300ms linear;
+    }
+
+    /* pricing tables */
+    .pricing__table-price h2 {
+        margin: 0 0 0 6px;
+        font-size: 35px;
+    }
+
+    /* stats */
+    .stats__item-content p {
+        line-height: 18px;
+    }
+
+    /* blog */
+    .blog__post h4 {
+        font-size: 15px;
+    }
+
+    /* contact */
+    ul.location__details li i {
+       width: 30px;
+    }
+
+    ul.location__details li {
+        margin-right: 35px;
+    }
+    
+
 }
 
 /* xsmall devices */

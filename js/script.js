@@ -19,7 +19,16 @@ $(function () {
         smartSpeed: 700,
         dots: false,
         nav: true,
-        navText: ['<i class="fas fa-angle-left"></i>', '<i class="fas fa-angle-right"></i>']
+        navText: ['<i class="fas fa-angle-left"></i>', '<i class="fas fa-angle-right"></i>'],
+        responsive: {
+            0: {
+                items: 1
+            },
+
+            480: {
+                items: 2
+            }
+        }
     });
 });
 
@@ -428,7 +437,6 @@ $(window).on('load', function () {
 // =======================
 // -       NAVBAR
 // =======================
-
 $(function () {
 
     toggleNav();

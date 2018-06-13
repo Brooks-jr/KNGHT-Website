@@ -1037,6 +1037,10 @@ ul.navbar-nav li.active a.outlined {
 #contact__left p {
     margin: 25px 0 20px 0;
 }
+.location h4 {
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--primary-color);
+}
 
 ul.location__details {
     list-style: none;
@@ -1044,7 +1048,7 @@ ul.location__details {
 }
 
 ul.location__details li {
-    display: flex;
+    display: inline-flex;
     font-family: var(--open-sans);
     margin-top: 12px;
 }

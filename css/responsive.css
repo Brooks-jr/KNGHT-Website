@@ -2,15 +2,17 @@
 -         MEDIA QUERIES
 ================================ */
 
-/* large devices */
+/* LARGE DEVICES */
 @media (min-width: 1200px) and (max-width: 1299.5px) {
     /* nav */
     .header__nav-wrap {
         padding: 0;
     }
 }
+/* ============================== */
 
-/* medium devices */
+
+/* MEDIUM DEVICES */
 @media (min-width: 992px) and (max-width: 1199.5px){
     /* nav */
     .header__nav-wrap {
@@ -30,8 +32,10 @@
         line-height: 20px;
     }
 }
+/* ============================== */
 
-/* small devices */
+
+/* SMALL DEVICES */
 @media (min-width: 768px) and (max-width: 991.5px){
 
     /* general */
@@ -119,9 +123,10 @@
         margin-right: 35px;
     }
 }
+/* ============================== */
 
 
-/* xsmall devices */
+/* XSMALL DEVICES */
 @media (max-width: 767.5px) {
 
     /* general */
@@ -311,14 +316,129 @@
     }
 
 
+    /* pricing */
+    .pricing__table {
+        margin-bottom: 30px;
+    }
+
+    .pricing__table-price h2{
+        font-size: 28px;
+        margin: 0 0 0 16px;
+    }
+
+
+    /* stats */
+    .stats__item-content {
+        margin-bottom: 20px;
+        padding: 25px 5px;
+    }
+
+    .stats__item-content i {
+        font-size: 30px;
+    }
+
+    .stats__item-content h3 {
+        font-size: 24px;
+    }
+
+
+    /* blog */
+    #blog__left {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .blog__post {
+        margin-bottom: 25px;
+    }
+
+
     /* contact */
+    #contact__left {
+        text-align: center;
+    }
+
+    .location {
+        margin-bottom: 40px;
+    }
+
+    .location h4 {
+        display: inline-block;
+        border: 1px solid var(--primary-color);
+        width: 200px;
+        padding: 10px;
+    }
+
+    #contact__left ul.social-icon-list {
+        margin-bottom: 40px;
+    }
+
     ul.location__details li i {
-        width: 30px;
+        display: block;
+        width: auto;
+        margin-bottom: 3px;
     }
 
     ul.location__details li {
-        margin-right: 35px;
+        display: block;
+        margin-top: 25px;
     }
 
 }
+/* ============================== */
 
+
+/* XXSMALL DEVICES */
+@media (max-width: 480px) {
+
+    /* home */
+    #home__header {
+        font-size: 18px;
+    }
+
+    #home__text p {
+        font-size: 11px;
+        line-height: 16px;
+        margin: 8px 10px 25px 10px;
+    }
+
+    /* header */
+    .sub-header h2,
+    .main-header h2 {
+        font-size: 22px;
+    }
+    
+    /* portfolio */
+    #isotope__filter-nav {
+        text-align: center;
+    }
+
+    #isotope__filter-nav button {
+        font-size: 10px;
+        padding-right: 14px;
+    }
+
+    /* testimonial */
+    .testimonial h3 {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .testimonial .testimonial__stars {
+        font-size: 13px;
+    }
+}
+
+
+@media (max-width: 320px) {
+
+    /* testimonial */
+    .testimonial .testimonial__stars {
+        font-size: 10px;
+    }
+
+    .testimonial {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

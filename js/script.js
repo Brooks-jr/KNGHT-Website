@@ -134,7 +134,18 @@ $(function () {
         loop: true,
         smartSpeed: 400,
         dots: true,
-        nav: false
+        nav: false,
+        responsive: {
+            0: {
+                items: 2
+            },
+            480: {
+                items: 3
+            },
+            768: {
+                items: 6
+            }
+        }
     });
 });
 

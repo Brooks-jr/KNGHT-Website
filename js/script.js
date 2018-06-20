@@ -8,6 +8,24 @@ $(window).on('load', function () {
 
 
 // =======================
+// -     MOBILE MENU
+// =======================
+$(function () {
+
+    // open menu
+    $('#hamburger').click(function () {
+        $('#mobile-nav').css('height', '100%');
+    });
+
+    // close menu
+    $('#mobile-nav-close, #mobile-nav a').click(function () {
+        $('#mobile-nav').css('height', '0');
+    });
+
+});
+
+
+// =======================
 // -      TEAM
 // =======================
 $(function () {
@@ -443,7 +461,7 @@ $(window).on('load', function () {
     infowindow.open(map, marker);
 
     // responsive map
-    google.maps.event.addDomListener(window, 'resize', function() {
+    google.maps.event.addDomListener(window, 'resize', function () {
         var center = map.getCenter();
         google.maps.event.trigger(map, 'resize');
         map.setCenter(cengter);

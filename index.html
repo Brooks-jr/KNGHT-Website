@@ -65,15 +65,42 @@
             <div class="container-fluid">
                 <div class="header__nav-wrap">
 
-                    <!-- logo -->
                     <div class="navbar-header">
-                        <a href="#home" class="navbar-brand"><img src="img/logo/nav-logo-white.png" alt="knght logo"></a>
+                        <!-- logo -->
+                        <a href="#home" class="navbar-brand">
+                            <img src="img/logo/nav-logo-white.png" alt="knght logo">
+                        </a>
+                        <!-- hamburger -->
+                        <span id="hamburger">
+                            <label>MENU</label>
+                            &#9778;
+                        </span>
                     </div>
 
-                    <!-- links -->
+                    <!-- MAIN NAV -->
                     <div class="container">
                         <div class="collapse navbar-collapse">
                             <ul class="nav navbar-nav pull-right">
+                                <li><a class="smooth-scroll" href="#home">Home</a></li>
+                                <li><a class="smooth-scroll" href="#about">About</a></li>
+                                <li><a class="smooth-scroll" href="#team">Team</a></li>
+                                <li><a class="smooth-scroll" href="#services">Services</a></li>
+                                <li><a class="smooth-scroll" href="#portfolio">Portfolio</a></li>
+                                <li><a class="smooth-scroll" href="#pricing">Pricing</a></li>
+                                <li><a class="smooth-scroll" href="#blog">Blog</a></li>
+                                <li><a class="outlined smooth-scroll" href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <!-- MOBILE NAV -->
+                    <div id="mobile-nav">
+                        <!-- close button -->
+                        <span id="mobile-nav-close">&times;</span>
+                        <!-- links -->
+                        <div id="mobile-nav-links">
+                            <ul class="nav">
                                 <li><a class="smooth-scroll" href="#home">Home</a></li>
                                 <li><a class="smooth-scroll" href="#about">About</a></li>
                                 <li><a class="smooth-scroll" href="#team">Team</a></li>

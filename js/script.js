@@ -442,6 +442,13 @@ $(window).on('load', function () {
 
     infowindow.open(map, marker);
 
+    // responsive map
+    google.maps.event.addDomListener(window, 'resize', function() {
+        var center = map.getCenter();
+        google.maps.event.trigger(map, 'resize');
+        map.setCenter(cengter);
+    });
+
 });
 
 

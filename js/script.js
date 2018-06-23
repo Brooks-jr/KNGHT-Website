@@ -534,13 +534,14 @@ $(function () {
 // -    WOW ANIMATION
 // =======================
 $(function() {
-    new WOW().init;
+    new WOW().init();
 });
 
 $(window).on('load', function () {
     $('#home__logo').addClass('animated fadeInDown');
     $('#home__header').addClass('animated fadeInUp');
     $('#home__text').addClass('animated fadeInUp');
-    $('#home__button').addClass('animated fadeInUp');
-
+    $('#home__button').addClass('animated jackInTheBox');
+    $('#scroll-indicator').addClass('animated fadeIn');
+    $('#header').addClass('animated fadeInDown');
 });

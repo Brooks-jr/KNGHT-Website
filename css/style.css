@@ -1484,12 +1484,18 @@ button:focus {
 ========================== */
 #home__header,
 #home__text,
-#home__button {
-    animation-duration: 1.8s;
+#scroll-indicator {
+    animation-duration: 1s;
     animation-delay: 2s;
 }
 
-#home__logo {
+#home__button {
+    animation-duration: 1s;
+    animation-delay: 2.5s;
+}
+
+#home__logo,
+#header {
     animation-duration: 1.5s;
     animation-delay: 1s;
 }

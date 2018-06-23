@@ -57,7 +57,7 @@
 <!-- ==================================
 -             HEADER NAV
 =====================================-->
-    <header>
+    <header id="header">
         <nav class="navbar navbar-fixed-top">
             <div class="container-fluid">
                 <div class="header__nav-wrap">
@@ -152,12 +152,13 @@
 
         <!-- scroll indicator -->
         <a href="#about" class="smooth-scroll">
-            <div class="mouse">
+            <div id="scroll-indicator" class="mouse">
                 <div class="mouse-icon">
                     <span class="mouse-wheel"></span>
                 </div>
             </div>
         </a>
+
     </section>
 
 
@@ -168,14 +169,18 @@
 
         <!-- FIRST SECTION -->
         <div id="about__top">
+
             <div class="content-wrap-lg">
+                
                 <div class="container">
 
                     <!-- TEXT -->
                     <div class="row">
-                        <!-- left -->
-                        <div class="col-md-6 col-sm-6">
 
+                        <!-- left -->
+                        <div class="col-md-6 col-sm-6 wow slideInLeft" data-wow-duration="1s">
+
+                            <!-- header -->
                             <div id="about__top-left">
                                 <div class="sub-header">
                                     <h5>who we are</h5>
@@ -188,7 +193,7 @@
                         </div>
 
                         <!-- right -->
-                        <div class="col-md-6 col-sm-6">
+                        <div class="col-md-6 col-sm-6 wow slideInRight" data-wow-duration="1s">
                             <div id="about__top-right">
                                 <p>In the search of a monsterous bug in her code, Mavis Day surprises even herself with her
                                     resourcefulness and skill as a programmer. During her travels, Mavis rescues a harddrive,
@@ -204,7 +209,7 @@
 
                     <!-- IMAGE -->
                     <div class="row">
-                        <div class="col-md-12">
+                        <div class="col-md-12 wow fadeInUp" data-wow-duration="1s">
                             <div id="about__image-wrap">
                                 <img id="about__image" src="img/about-mockup.jpg" alt="KNGHT logo mockup" class="img-responsive">
                             </div>
@@ -224,7 +229,7 @@
                     <div class="row">
 
                         <!-- 1 -->
-                        <div class="col-md-4 col-sm-4">
+                        <div class="col-md-4 col-sm-4 wow rollIn" data-wow-delay="1s">
                             <div class="about__box-item text-center">
                                 <!-- overlay -->
                                 <div class="box-item-overlay">
@@ -240,7 +245,7 @@
                         </div>
 
                         <!-- 2 -->
-                        <div class="col-md-4 col-sm-4">
+                        <div class="col-md-4 col-sm-4 wow rollIn" data-wow-delay=".5s">
                             <div class="about__box-item text-center">
                                 <!-- overlay -->
                                 <div class="box-item-overlay">
@@ -256,7 +261,7 @@
                         </div>
 
                         <!-- 3 -->
-                        <div class="col-md-4 col-sm-4">
+                        <div class="col-md-4 col-sm-4 wow rollIn">
                             <div class="about__box-item text-center">
                                 <!-- overlay -->
                                 <div class="box-item-overlay">
@@ -291,7 +296,9 @@
                 <div class="row">
 
                     <!-- left -->
-                    <div class="col-md-6 col-sm-6">
+                    <div class="col-md-6 col-sm-6 wow slideInLeft">
+
+                        <!-- header -->
                         <div id="team__header">
 
                             <div class="sub-header">
@@ -303,9 +310,12 @@
                                 </h2>
                             </div>
 
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, sit consequuntur minima ratione
+                            <!-- text -->
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, sit consequuntur minima ratione
                                 adipisci totam assumenda expedita corrupti quia architecto voluptatum repudiandae vero ullam
-                                fuga sapiente cupiditate temporibus odio in.</p>
+                                fuga sapiente cupiditate temporibus odio in.
+                            </p>
 
                         </div>
                     </div>
@@ -313,7 +323,7 @@
 
                     <!-- right -->
                     <div class="col-md-6 col-sm-6">
-                        <div id="team__member-wrap" class="owl-carousel owl-theme">
+                        <div id="team__member-wrap" class="owl-carousel owl-theme wow slideInRight">
 
                             <!-- 1 -->
                             <div class="team__member">
@@ -502,7 +512,7 @@
                 <!-- BOTTOM -->
                 <div id="team__bottom">
                     <!-- rating bars -->
-                    <div class="row">
+                    <div class="row wow fadeIn">
                         <!-- 1 -->
                         <div class="col-md-6 col-sm-6">
                             <div class="rating">
@@ -566,7 +576,7 @@
         <div class="content-wrap-lg">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-12 wow zoomIn">
                         <div id="statement__text" class="text-center">
                             <h3>
                                 <i class="fas fa-quote-left"></i> As KNGHT we do hereby pledge to one and all who hire our services
@@ -596,7 +606,7 @@
 
                     <!-- 1 -->
                     <div class="row">
-                        <div class="col-md-12">
+                        <div class="col-md-12 wow fadeInDown">
                             <div class="main-header text-center">
                                 <h5>What We Offer</h5>
                                 <h2>Ye
@@ -609,14 +619,14 @@
                     <!-- 2 -->
                     <div class="row">
                         <!-- left -->
-                        <div class="col-md-7 col-sm-7">
+                        <div class="col-md-7 col-sm-7 wow slideInLeft" data-wow-delay="1.5s">
                             <img class="services__top-img img-responsive" src="img/services-mockup-2.png" alt="laptop with KNGHT website">
                         </div>
 
                         <!-- right -->
                         <div class="col-md-5 col-sm-5">
                             <!-- 1 -->
-                            <div class="services__item">
+                            <div class="services__item wow slideInRight" data-wow-delay="">
                                 <div class="row">
                                     <!-- icon -->
                                     <div class="col-md-2 col-sm-2">
@@ -635,7 +645,7 @@
                             </div>
 
                             <!-- 2 -->
-                            <div class="services__item">
+                            <div class="services__item wow slideInRight" data-wow-delay=".5s">
                                 <div class="row">
                                     <!-- icon -->
                                     <div class="col-md-2 col-sm-2">
@@ -654,7 +664,7 @@
                             </div>
 
                             <!-- 3 -->
-                            <div class="services__item">
+                            <div class="services__item wow slideInRight" data-wow-delay="1s">
                                 <div class="row">
                                     <!-- icon -->
                                     <div class="col-md-2 col-sm-2">

@@ -25,6 +25,14 @@ $(function () {
 });
 
 
+
+// =======================
+// -       HOME
+// =======================
+var vid = document.getElementById("home__bg-vid");
+vid.playbackRate = 1.3;
+
+
 // =======================
 // -      TEAM
 // =======================
@@ -114,6 +122,7 @@ $(function () {
     });
 });
 
+
 // =======================
 // -     TESTIMONIAL
 // =======================
@@ -129,6 +138,7 @@ $(function () {
         navText: ['<i class="fas fa-angle-left"></i>', '<i class="fas fa-angle-right"></i>']
     });
 });
+
 
 // =======================
 // -       STATS
@@ -517,4 +527,20 @@ $(function () {
             scrollTop: $(section_id).offset().top
         }, 1250, "easeInOutExpo");
     });
+});
+
+
+// =======================
+// -    WOW ANIMATION
+// =======================
+$(function() {
+    new WOW().init;
+});
+
+$(window).on('load', function () {
+    $('#home__logo').addClass('animated fadeInDown');
+    $('#home__header').addClass('animated fadeInUp');
+    $('#home__text').addClass('animated fadeInUp');
+    $('#home__button').addClass('animated fadeInUp');
+
 });

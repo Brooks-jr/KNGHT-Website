@@ -97,10 +97,6 @@ section {
     transition: all 300ms linear;
 }
 
-/* .navbar-header {
-    width: 100%;
-} */
-
 .header__nav-wrap {
     padding: 0 85px;
 }
@@ -183,13 +179,12 @@ ul.navbar-nav li.active a.outlined {
     width: auto;
     height: auto;
     z-index: -1;
-    background: url(../video/home-vid.jpg) no-repeat;
+    background: url(../video/home-poster.jpg) no-repeat;
     background-size: cover;
-    /* filter: grayscale(1); */
 }
 
 #home__bg-overlay {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.7);
     position: fixed;
     width: 100%;
     height: 100%;
@@ -207,6 +202,12 @@ ul.navbar-nav li.active a.outlined {
 #home__content {
     display: table-cell;
     vertical-align: middle;
+}
+
+#home__logo {
+    display: inline-block;
+    max-width: 240px;
+    max-height: 240px;
 }
 
 #home__header {
@@ -1475,4 +1476,20 @@ button:focus {
 #testimonial__slides.owl-theme .owl-nav .owl-next:hover, 
 #testimonial__slides.owl-theme .owl-nav .owl-prev:hover {
     color: #fff !important;
+}
+
+
+/* ==========================
+-        ANIMATIONS
+========================== */
+#home__header,
+#home__text,
+#home__button {
+    animation-duration: 1.8s;
+    animation-delay: 2s;
+}
+
+#home__logo {
+    animation-duration: 1.5s;
+    animation-delay: 1s;
 }

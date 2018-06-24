@@ -24,6 +24,7 @@
 
 html, body {
     height: 100%;
+    cursor: crosshair;
 }
 
 body {
@@ -43,7 +44,7 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6, p {
-    cursor: default;
+    cursor: crosshair;
     /* margin: 0; */
 }
 
@@ -987,7 +988,7 @@ ul.navbar-nav li.active a.outlined {
 
 .blog__post {
     padding: 20px;
-    border-radius: 6px;
+    border-radius: 3px;
     -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
             box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
 }
@@ -1175,6 +1176,7 @@ footer {
 }
 
 footer p {
+    margin: 0;
     line-height: 20px;
 }
 

@@ -68,7 +68,7 @@ $(function () {
         $('.progress-bar').each(function () {
             $(this).animate({
                 width: $(this).attr('aria-valuenow') + '%'
-            }, 1000);
+            }, 2000);
         });
 
         // prevents triggering again
@@ -543,5 +543,4 @@ $(window).on('load', function () {
     $('#home__text').addClass('animated fadeInUp');
     $('#home__button').addClass('animated jackInTheBox');
     $('#scroll-indicator').addClass('animated fadeIn');
-    $('#header').addClass('animated fadeInDown');
 });

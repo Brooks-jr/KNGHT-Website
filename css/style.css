@@ -428,13 +428,13 @@ ul.navbar-nav li.active a.outlined {
     background: -webkit-gradient(
         linear, 
         left top, right bottom, 
-        from(rgba(0,0,0, .8)), 
-        to(rgba(0,0,0, .8))),
+        from(rgba(0,0,0, .7)), 
+        to(rgba(0,0,0, .7))),
         url(../img/bg-statement.jpg) no-repeat fixed center;
     background: linear-gradient(
         to right bottom, 
-        rgba(0,0,0, .8), 
-        rgba(0,0,0, .8)),
+        rgba(0,0,0, .7), 
+        rgba(0,0,0, .7)),
         url(../img/bg-statement.jpg) no-repeat fixed center;
     background-size: cover;
 }

@@ -538,7 +538,7 @@ $(function() {
 });
 
 $(window).on('load', function () {
-    $('#home__logo').addClass('animated fadeInDown');
+    $('#home__logo').addClass('animated zoomIn');
     $('#home__header').addClass('animated fadeInUp');
     $('#home__text').addClass('animated fadeInUp');
     $('#home__button').addClass('animated jackInTheBox');
